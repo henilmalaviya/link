@@ -1,6 +1,8 @@
 <script lang="ts">
-	import '../app.css';
-	let { children } = $props();
+	import UnderMaintenance from '$lib/components/UnderMaintenance.svelte';
+	import '$lib/styles/global.css';
 </script>
 
-{@render children()}
+<div class="flex w-full flex-grow items-center justify-center">
+	<UnderMaintenance />
+</div>
